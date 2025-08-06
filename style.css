@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #009688;
+    --secondary-color: #f0f2f5;
+    --text-color: #333;
+    --light-text-color: #555;
+    --bg-color: #fff;
+    --border-color: #ddd;
+    --teal-bg: #e0f2f1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.right-column {
+    flex: 2;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.left-column {
+    flex: 1;
+    background-color: var(--secondary-color);
+    padding: 30px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 3px solid var(--primary-color);
+    object-fit: cover;
+}
+
+h1.name {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.section p {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+}
+
+.about-me h2 {
+    background-color: var(--teal-bg);
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: none;
+    color: var(--text-color);
+}
+
+.work-experience .item,
+.education .item {
+    margin-bottom: 20px;
+}
+
+.work-experience h3,
+.education h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.work-experience h4,
+.education h4 {
+    font-size: 0.9rem;
+    color: var(--light-text-color);
+    margin-bottom: 5px;
+}
+
+.work-experience .date,
+.education .date {
+    display: block;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+/* Left Column Styles */
+.left-column h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--teal-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+    text-align: right;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.contact-info .icon {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-left: 10px;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.skills .skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skills .skill-item span {
+    font-size: 0.9rem;
+}
+
+.rating {
+    display: flex;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--border-color);
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.dot.filled {
+    background-color: var(--primary-color);
+}
