@@ -1,151 +1,10 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>رزومه پژمان بخشی</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <title>صفحه آزمایشی XSS</title>
 </head>
 <body>
-    <div class="container">
-        <div class="right-column">
-            <div class="profile-section">
-                <img src="https://via.placeholder.com/120" alt="عکس پرسنلی" class="profile-pic">
-                <h1 class="name">پژمان بخشی</h1>
-            </div>
-            <div class="section about-me">
-                <h2>درباره من</h2>
-                <p>اینجانب با بیش از یک دهه سابقه تخصصی و حرفه‌ای در حوزه منابع انسانی و ارتباطات اجتماعی و نیز با توجه به تغییر رویکردها و قابلیت‌های این حوزه، همگام با تغییرات و تلاش‌های جهانی، مهارت‌های فنی و عملی و اداری خود را توسعه داده و نمونه‌های کاربردی با قابلیت‌های فردی و تیمی را از افراد مورد نیاز تا مشارکت و کاریابی به اهداف تعیین شده در برنامه‌های سازمانی دست یابم.</p>
-            </div>
-            <div class="section work-experience">
-                <h2>سوابق شغلی</h2>
-                <div class="item">
-                    <span class="date">اسفند ۹۹ بهمن ۹۹</span>
-                    <h3>قائم مقام مدیر عامل</h3>
-                    <h4>گروه توسعه دانش مان داز</h4>
-                    <p>پیاده‌سازی سیستم ۴۰۰۰ منابع انسانی پیاده‌سازی ایزو ۹۰۰۰ تدوین و به روز رسانی آیین نامه‌های اداری و کارگزینی و منابع انسانی و گریدینگ</p>
-                </div>
-                <div class="item">
-                    <span class="date">اسفند ۹۹ بهمن ۹۹</span>
-                    <h3>قائم مقام مدیر عامل</h3>
-                    <h4>گروه توسعه دانش مان داز</h4>
-                    <p>پیاده‌سازی سیستم ۴۰۰۰ منابع انسانی پیاده‌سازی ایزو ۹۰۰۰ تدوین و به روز رسانی آیین نامه‌های اداری و کارگزینی و منابع انسانی و گریدینگ</p>
-                </div>
-            </div>
-            <div class="section education">
-                <h2>سوابق تحصیلی</h2>
-                <div class="item">
-                    <span class="date">اسفند ۹۹ بهمن ۹۹</span>
-                    <h3>قائم مقام مدیر عامل</h3>
-                    <h4>گروه توسعه دانش مان داز</h4>
-                    <p>پیاده‌سازی سیستم ۴۰۰۰ منابع انسانی پیاده‌سازی ایزو ۹۰۰۰ تدوین و به روز رسانی آیین نامه‌های اداری و کارگزینی و منابع انسانی و گریدینگ</p>
-                </div>
-            </div>
-        </div>
-        <div class="left-column">
-            <div class="section contact-info">
-                <h2>اطلاعات پایه</h2>
-                <ul>
-                    <li><span class="icon">📧</span> hanihehdghann@gmail.com</li>
-                    <li><span class="icon">📍</span> ایران، تهران، خیابان</li>
-                    <li><span class="icon">📱</span> ۰۹۸ ۲۱۷۷۸۰۲۲۴۰</li>
-                </ul>
-            </div>
-            <div class="section personal-info">
-                <ul>
-                    <li><span>وضعیت تاهل</span><span>مجرد</span></li>
-                    <li><span>حقوق مورد انتظار</span><span>۳ تا ۶ میلیون</span></li>
-                    <li><span>وضعیت نظام وظیفه</span><span>معاف</span></li>
-                    <li><span>تاریخ تولد</span><span>۱۳۷۷/۱۲/۲</span></li>
-                </ul>
-            </div>
-            <div class="section skills">
-                <h2>مهارت ها</h2>
-                <div class="skill-item">
-                    <span>PHOTOSHOP</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>HTML</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>CSS</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>JAVA SCRIPT</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                 <div class="skill-item">
-                    <span>PHOTOSHOP</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>HTML</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>CSS</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>JAVA SCRIPT</span>
-                    <div class="rating">
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>جستجوی ساده</h1>
+    <p>شما جستجو کردید برای: <?php echo $_GET['search_query']; ?></p>
 </body>
 </html>
